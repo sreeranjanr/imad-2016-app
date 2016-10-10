@@ -57,8 +57,8 @@ function createtemplate (data){
            </div>
         </body>
     </html>
-;`
-    return htmlTemplate
+`;
+    return htmlTemplate;
 }
 
 
