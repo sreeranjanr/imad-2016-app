@@ -103,10 +103,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/:articleName', function (req, res) {
+app.get('/:bookName', function (req, res) {
     //articleName = article-oneName;
-    var articleName = req.params.articleName;
-    res.send(createTemplate(articles[articleName]));
+    var bookName = req.params.bookName;
+    res.send(createTemplate(articles[bookName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
